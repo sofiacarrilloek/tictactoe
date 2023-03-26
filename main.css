@@ -1,0 +1,59 @@
+Body {background-color :#475D80;}
+
+.parrafo1 {
+   position: relative;
+   top: 210px;
+   left: 300px;
+   font-family: Arial;
+   height: 150px;
+  width: 200px;
+}
+.parrafo2 {
+    position: relative;
+    top: 40px;
+    right: -1100px;
+    font-family: Arial;
+    height: 150px;
+  width: 200px;
+ }
+.puntaje {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color:transparent ;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn {
+    background-color:#6082B5;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+  }
+  
+  #game {
+    padding: 10px;
+    background-image: url();
+    background-size: 15px;
+ 
+
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 400px;
+    width: 400px;
+    background-image: url(images/table.svg);
+    background-size: 100% 100%;
+    position: relative;
+    margin: 0 auto;
+    top: -120px;
+}
