@@ -14,7 +14,24 @@ body{
     --blanco: #ffffff;
     --negro: #000000;
 }
-
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #6082B5;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidebar.active {
+    left: 0;
+  }
+  
+  .trigger-image {
+    cursor: pointer;
+  }
 .navbar {
     position: relative;
     display: flex;
