@@ -1,0 +1,38 @@
+:root {
+    --primario:#475D80;
+    --secundario:#6082B5;
+    --terciario: #A6ACFC;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+
+#contenedor{
+margin: auto;
+background-color: var(--primario);
+position: relative;
+height: 100%;
+width: 100%;
+}
+
+#contenedor .logo{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor .play{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor .text{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: beige; 
+    font-family: arial;
+    font-size: 40px;
+  }
+
