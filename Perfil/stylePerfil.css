@@ -1,0 +1,157 @@
+:root {
+    --primario:#475D80;
+    --secundario:#6082B5;
+    --terciario: #A6ACFC;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+body{background-color: var(--primario);}
+
+.perfil{
+  text-align: center;
+  font-size: 1.8em;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+#izq{
+  background-color: var(--primario);
+  width: 38%;
+  margin-top: 1%;
+  position:relative;
+  font-family: Arial;
+  display: flex;
+  flex-direction: row;
+  margin-left: 23%;
+}
+
+.textG{
+  font-size: 2.3em;
+}
+
+#izq p{
+  font-weight: bold;
+  font-size: 0.8em; 
+  padding-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+#izq .areatexto{
+  background-color: var(--primario); 
+  border: 5px;
+  border-color: white;
+  border-radius: 5px;
+  resize: none;
+  color: white;
+}
+
+#izq .boton{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--secundario);
+}
+
+
+#izq .boton2{
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+ 
+  color: white;
+  background-color: var(--secundario);
+}
+
+#izq .contenedor{
+  margin: 30px;
+}
+
+
+#izq .botones{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+  border-color: var(--primario);
+}
+
+#izq .contenedorDer{
+  margin: 0px;
+  background-color: var(--primario);
+  margin-left: 18%;
+  display: flex;
+  flex-direction: row;
+}
+
+.textDer{
+  font-size: 1.9em;
+}
+
+.textDer2 {
+  font-size: 1.9em;
+}
+
+#izq .img-container1{
+  background-image: url("/images/chefsito.jpg");
+  background-size: cover;
+  width: 100px; 
+  height: 150px;
+  border-radius: 50px;
+  margin: 20px;
+  margin-right: 100px;
+  margin-top: 0px;
+}
+
+#med .img-medalla{
+  background-image: url("./imagenes/medalla-de-oro.png");
+  background-size: cover;
+  width: 70px; 
+  height: 70px;
+}
+
+#med{
+  display: flex;
+  background-color: var(--primario);
+  flex-direction: row;
+  justify-content: end;
+  margin-right: 100px;
+  font-size: 0.8;
+  color: black;
+  font-weight: bold;
+  align-items: center;
+}
+
+#medallas{
+  display: flex;
+  background-color: var(--primario);
+  flex-direction: row;
+  justify-content: end;
+}
+
+#medallas .img-medalla{
+  margin-inline: 10px;
+  background-image: url("./imagenes/divisa.png");
+  background-size: cover;
+  width: 60px; 
+  height: 60px;
+}
+
+
+footer{
+  background-color: var(--secundario);
+}
+
+footer p{
+  text-align: end;
+  font-size: large;
+  height:70px;
+  margin: 0;
+  padding: 12px;
+  color: white;
+}
