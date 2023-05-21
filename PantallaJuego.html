@@ -6,54 +6,30 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="style.css">
     <script src='main.js'></script>
 </head>
 <body>
-  <div class="parrafo1">
-    <FONT COLOR="white"><p> <h2   <b> Victorias</b> </h2></FONT>
-    </p>
-    <div class="puntaje">0</div>
-    <br>
-    <br>
-    <FONT COLOR="white"><p> <h2  <b> Derrotas</b> </h2></FONT> 
-    </p>
-    <div class="puntaje">0</div>
-    <br>
-    <br>
-    <FONT COLOR="white"> <p> <h2  <b> Empate</b> </h2></FONT>
-    </p>
-    <div class="puntaje">0</div>
-  </div>
-  <div class="parrafo2">
-    <FONT COLOR="white"><p> <h2   <b> Victorias</b> </h2></FONT>
-    </p>
-    <div class="puntaje">0</div>
-    <br>
-    <br>
-    <FONT COLOR="white"><p> <h2  <b> Derrotas</b> </h2></FONT> 
-    </p>
-    <div class="puntaje">0</div>
-    <br>
-    <br>
-    <FONT COLOR="white"> <p> <h2  <b> Empate</b> </h2></FONT>
-    </p>
-    <div class="puntaje">0</div>
-  </div>
-  
- 
-<div id="game">
-    <div class="table">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+  <div class="container2">
+    <canvas id="cvs" width="450" height="450"></canvas>
+    <div class="options"> 
+        <h1>Tic Tac Toe</h1>
+        
+        <h2>Play Versus</h2>
+        <div class="computer">COMPUTER</div>
+        <div class="friend">FRIEND</div>
+
+        <h2>Symbol</h2>
+        <div class="x">X</div>
+        <div class="o">O</div>
+
+        <div class="play">PLAY</div>
     </div>
+    <div class="gameover hide"></div>
+</div>
     <button class="btn">Guardar partida</button>
 </div>
+<script src="opciones.js"></script>
+    <script src="juego.js"></script>
 </body>
 </html>
