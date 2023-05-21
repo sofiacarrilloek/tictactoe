@@ -25,7 +25,7 @@ function init(player, OPPONENT){
 
 
     const oImage = new Image();
-    oImage.src = "images/chefsito2.jpg";
+    oImage.src = "images/Ogato.png";
     oImage.style.width = "50px";
 oImage.style.height = "50px";
 
