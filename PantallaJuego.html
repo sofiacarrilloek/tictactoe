@@ -1,29 +1,86 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pantalla Juego</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <script src='main.js'></script>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" 
+    crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg fixed-top">
+      <div class="dropdown ">
+            
+        <div class="sidebar-container p-3" >
+            <img class="trigger-image" src="images/menu.png" height="50px" width="50px">
+            <div class="sidebar p-3">
+              <div class="p-3"> 
+             <a > <p> <img class="img-fluid"  src="images/menu.png" height="40px" width="40px"> Menu </p></a>
+              </div>
+             <div class="p-3">
+                <p>  <a href="index.html"> <img src="images/punta-de-flecha-del-boton-de-reproduccion.png" height="40px" width="40px" alt="">   Jugar </p></a>
+             </div>
+             <div class="p-3">
+                <p>  <a href="CambiarAjustes.html"> <img src="images/configuracion.png" height="40px" width="40px" alt="" >   Configuración </p></a>
+             </div>
+             <div class="p-3">
+                <p> <a href="Tableros/indexTableros.html">  <img src="images/tres-en-raya.png" height="40px" width="40px" alt="">   Tableros </p></a>
+             </div>
+             <div class="p-3">
+                 <p>  <a href="ReglasJuego.html"> <img src="images/regla.png" height="40px" width="40px" alt="">  Reglas </p></a>
+              </div>
+              <div class="p-3">
+                 <p>  <a href="PantallaSonido.html"> <img src="images/volumen.png" height="40px" width="40px" alt="">  Ajustes Idioma </p></a>
+              </div>
+        
+            </div>
+           
+            </div>
+          </div>
+
+      <div class="container">
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav ms-auto py-4 py-lg-0">
+              <li>
+                <a class="navbar a" href="usuario.html">Usuario
+                  <img src="images/chefsito.jpg" width="50px" height="65px" class="rounded-5 ms-2"></a>
+              </li>
+            </ul>      
+      </div>
+    </nav>
+
   <div class="container2">
-    <canvas id="cvs" width="450" height="450"></canvas>
-    <div class="options"> 
+    <canvas id="cvs" class="cv" width="600" height="600"></canvas>
+    <div class="options justify-content-center"> 
         <h1>Tic Tac Toe</h1>
         
-        <h2>Play Versus</h2>
-        <div class="computer">COMPUTER</div>
-        <div class="friend">FRIEND</div>
+        <h2>Modo de juego</h2>
+        <div class="computer ">IA</div>
+        <div class="friend">Amigo</div>
+        
 
-        <h2>Symbol</h2>
+        <h2>Simbolo</h2>
         <div class="x">X</div>
         <div class="o">O</div>
 
-        <div class="play">PLAY</div>
+        <br>
+        <h2>Tablero</h2>
+        
+        <div class="t1 ">Lienzo</div>    
+        <div class="t2 ">Madera</div>     
+        <div class="t3 ">Pizarron</div>
+      
+        
+        <div class="play d-grid justify-content-center">Jugar</div>
     </div>
     <div class="gameover hide"></div>
 </div>
@@ -33,4 +90,16 @@
 <script src="scripts/opciones.js"></script>
     <script src="scripts/juego.js"></script>
 </body>
+
+<script src="scripts/sidebar.js">  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
 </html>

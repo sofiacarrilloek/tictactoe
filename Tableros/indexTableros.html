@@ -2,50 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegir</title>
-    <link rel="stylesheet" href="styleTableros.css">
-
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/estilos.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/tictactoe-main/main.css'>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="/tictactoe-main/style.css"></link>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-
-   </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pantalla Juego</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+  crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel="stylesheet" href="styleTableros.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <script src='main.js'></script>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" 
+  crossorigin="anonymous"></script>
 
 <body>
    <nav class="navbar navbar-expand-lg fixed-top">
     <div class="dropdown ">
             
       <div class="sidebar-container p-3" >
-          <img class="trigger-image" src="images/menu.png" height="50px" width="50px">
+          <img class="trigger-image" src="../images/menu.png" height="50px" width="50px">
           <div class="sidebar p-3">
             <div class="p-3"> 
-           <a > <p> <img class="img-fluid"  src="images/menu.png" height="40px" width="40px"> Menu </p></a>
+           <a > <p> <img class="img-fluid"  src="../images/menu.png" height="40px" width="40px"> Menu </p></a>
             </div>
            <div class="p-3">
-              <p>  <a href="index.html"> <img src="images/punta-de-flecha-del-boton-de-reproduccion.png" height="40px" width="40px" alt="">   Jugar </p></a>
+              <p>  <a href="../index.html"> <img src="../images/punta-de-flecha-del-boton-de-reproduccion.png" height="40px" width="40px" alt="">   Jugar </p></a>
            </div>
            <div class="p-3">
-              <p>  <a href="CambiarAjustes.html"> <img src="images/configuracion.png" height="40px" width="40px" alt="" >   Configuración </p></a>
+              <p>  <a href="../CambiarAjustes.html"> <img src="../images/configuracion.png" height="40px" width="40px" alt="" >   Configuración </p></a>
            </div>
            <div class="p-3">
-              <p> <a href="Tableros/indexTableros.html">  <img src="images/tres-en-raya.png" height="40px" width="40px" alt="">   Tableros </p></a>
+              <p> <a href="../Tableros/indexTableros.html">  <img src="../images/tres-en-raya.png" height="40px" width="40px" alt="">   Tableros </p></a>
            </div>
            <div class="p-3">
-               <p>  <a href="ReglasJuego.html"> <img src="images/regla.png" height="40px" width="40px" alt="">  Reglas </p></a>
+               <p>  <a href="../ReglasJuego.html"> <img src="../images/regla.png" height="40px" width="40px" alt="">  Reglas </p></a>
             </div>
             <div class="p-3">
-               <p>  <a href="PantallaSonido.html"> <img src="images/volumen.png" height="40px" width="40px" alt="">  Ajustes Idioma </p></a>
+               <p>  <a href="../PantallaSonido.html"> <img src="../images/volumen.png" height="40px" width="40px" alt="">  Ajustes Idioma </p></a>
             </div>
       
           </div>
@@ -58,32 +55,31 @@
             <ul class="navbar-nav ms-auto py-4 py-lg-0">
               <li>
                 <a class="navbar a" href="usuario.html">Usuario
-                  <img src="/tictactoe-main/images/chefsito.jpg" width="50px" height="65px" class="rounded-5 ms-2"></a>
+                  <img src="../images/chefsito.jpg" width="50px" height="65px" class="rounded-5 ms-2"></a>
               </li>
             </ul>      
       </div>
     </nav>
     <p class="text">TABLEROS</p>
-    <section id="container">
-          <div class="tableros">
-            <div class="img-container1"></div>
-            <div class="img-container2"></div>
-            <div class="img-container3"></div>
+    <section >
+          <div class="row align-items-center">
+            <div class="col-sm-4">
+              <div class="img-container1 row text-center m-2"></div>
+              <div class="t1 row text-center py-2 m-2"><button class="btn">Lienzo</button></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="img-container2 row text-center m-2"></div>
+              <div class="row text-center py-2 m-2"><button class="btn">Madera</button></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="img-container3 row text-center m-2"></div>
+              <div class="row text-center py-2 m-2"><button class="btn">Pizarron</button></div>
+            </div>
           </div>
    </section>
-
-    <section id="container2">
-        <div class="carta"><button class="boton">Elegir</button></div>
-        <div class="carta"><button class="boton">Elegir</button></div>
-        <div class="carta"><button class="boton">Elegir</button></div>
-    </section>
-    <script src="scripts/sidebar.js">  </script>
+    <script src="../scripts/sidebar.js">  </script>
+    <script src="../scripts/opciones.js">  </script>
 </body>
 
-<footer>
-    <div class="container">
-        <p>SIGUwME EN MI PAGINA DE FACEBOOK: YARET CANTE :D</p>
-    </div>
-</footer>
 
 </html>

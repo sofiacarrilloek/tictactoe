@@ -51,6 +51,34 @@ a{
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+.form-containerR {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 30px 30px; 
+  box-sizing: border-box; 
+  background-color: var(--secundario);
+  border-radius: 10px;
+  top: 30%;
+  transform: translateY(5%);
+}
+
+.form-containerR h1{
+  color: #2b3d5e;
+}
+.form-containerR h2{
+  color: #2b3d5e;
+}
+
+.form-containerGame {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 30px 30px; 
+  box-sizing: border-box; 
+  background-color: var(--secundario);
+  border-radius: 10px;
+  top: 30%;
+  transform: translateY(5%);
+}
 
 .form-container {
   max-width: 600px; 
@@ -59,8 +87,8 @@ a{
   box-sizing: border-box; 
   background-color: var(--secundario);
   border-radius: 10px;
-  top: 50%;
-  transform: translateY(40%);
+  top: 30%;
+  transform: translateY(5%);
   
 }
 @media (max-width: 600px) {
@@ -79,6 +107,21 @@ a{
     color: var(--blanco);
     
 }
+.blanco {
+  color: transparent;
+}
+
+.parrafoReglas {
+  position: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  color: #fff;
+  font-style: normal;
+  text-align: justify;
+}
+
 .btnInicio {
   background-color: transparent;
   border: none;
@@ -96,88 +139,102 @@ a{
 
 #cvs{
   position: absolute;
-  border: 1px solid #000;
+  border: 1px solid var(--secundario);
+  
+  width: 600px;
+  height: 600px;
+  
 }
-
+.options .t1, .t2, .t3{
+  padding: 10px;
+  background-color: var(--blanco);
+  color: var(--primario);
+  font-size: 1.5em;
+  border-radius: 5px;
+  width: 150px;
+  margin-left: 35px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid var(--blanco);
+}
 .options{
-  position: absolute;
-  width: 450px;
-  height: 450px;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-color: var(--secundario);
 }
 
 .options h1{
   text-align: center;
   font-size: 65px;
-  font-family: 'Fascinate Inline', cursive;
-  color: #f00;
+  color: var(--blanco);
   margin: 30px 0 20px 0;
 }
 
 .options h2{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   font-weight: bold;
+  color: var(--blanco);
 }
 
 .options div{
   display: inline-block;
+  justify-content: center;
 }
 
 .options .computer, .x{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 5px;
-  background-color: #FFF;
-  color: #000;
+  padding: 10px;
+  background-color: var(--blanco);
+  color: var(--primario);
   font-size: 1.5em;
   border-radius: 5px;
-  margin-left: 70px;
+  margin-left: 140px;
   width: 150px;
   text-align: center;
   cursor: pointer;
-  border: 1px solid #000;
+  border: 1px solid var(--blanco);
 }
 
 .options .friend, .o{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 5px;
-  background-color: #FFF;
-  color: #000;
+  padding: 10px;
+  background-color: var(--blanco);
+  color: var(--primario);
   font-size: 1.5em;
   border-radius: 5px;
   margin-left: 10px;
   width: 150px;
   text-align: center;
   cursor: pointer;
-  border: 1px solid #000;
+  border: 1px solid var(--blanco);
 }
 
-.options .friend:hover, .computer:hover, .x:hover, .o:hover{
-  background-color: #011627;
-  color: #FFF;
+.options .friend:hover, .computer:hover, .x:hover, .o:hover, .t1:hover, .t2:hover, .t3:hover{
+  background-color: var(--terciario);
+  color: var(--blanco);
 }
+
 
 .options .play{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5em;
-  width: 70px;
-  display: block;
+  width: 100px;
   margin: 25px auto;
   border-radius: 5px;
-  border: 1px solid #011627;
+  border: 1px solid var(--terciario);
   text-align: center;
   padding: 10px;
-  background-color: #011627;
-  color: #FFF;
+  background-color: var(--terciario);
+  color: var(--blanco);
   cursor: pointer;
   transition: 100ms width ease-in;
 }
 .options .play:hover{
-  width: 110px;
+  background-color: var(--primario);
+  color: var(--blanco);
 }
 
 .active{
-  background-color: #011627 !important;
-  color: #FFF !important;
+  background-color: var(--terciario);
+  color: var(--blanco);
 }
 
 .hide{
@@ -186,15 +243,14 @@ a{
 
 .gameover{
   position: absolute;
-  width: 450px;
-  height: 450px;
-  background-color: rgba(0, 0, 0, 0.95);
+  width: 600px;
+  height: 600px;
+  background-color: var(--secundario)
 }
 .gameover h1{
   text-align: center;
   font-size: 50px;
-  font-family: 'Fascinate Inline', cursive;
-  color: #fff;
+  color: var(--negro);
   margin: 40px 0 20px 0;
 }
 
@@ -204,26 +260,28 @@ a{
 }
 
 .gameover .play{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.5em;
+  
   width: 150px;
-  display: block;
+  height: 80px;
   margin: 25px auto;
   border-radius: 5px;
-  border: 1px solid #fff;
-  text-align: center;
-  padding: 10px;
-  background-color: #fff;
-  color: #000;
+  border: 1px solid var(--terciario);
+  justify-content: center;
+  font-size: 30px;
+  
+  padding: 1px;
+  background-color: var(--terciario);
+  color: var(--blanco);
   cursor: pointer;
   transition: 100ms width ease-in;
 }
 .gameover .play:hover{
-  width: 200px;
+  background-color: var(--primario);
+  color: var(--blanco);
 }
 .container2{
-  width: 450px;
-  height: 450px;
+  width: 600px;
+  height: 600px;
   display: block;
   margin: 25px auto;
   position: relative;

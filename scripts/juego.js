@@ -7,7 +7,7 @@ function init(player, OPPONENT){
     let board = [];
     const COLUMN = 3;
     const ROW = 3;
-    const SPACE_SIZE = 150;
+    const SPACE_SIZE = 200;
 
     // STORE PLAYER'S MOVES
     let gameData = new Array(9);
@@ -25,9 +25,9 @@ function init(player, OPPONENT){
 
 
     const oImage = new Image();
-    oImage.src = "images/Ogato.png";
+    oImage.src = "images/O.png";
     oImage.style.width = "50px";
-oImage.style.height = "50px";
+    oImage.style.height = "50px";
 
     // Win combinations
     const COMBOS = [
@@ -254,13 +254,13 @@ oImage.style.height = "50px";
 
     // SHOW GAME OVER
     function showGameOver(player){
-        let message = player == "tie" ? "Oops No Winner" : "The Winner is";
+        let message = player == "Empate" ? "Perdiste bro" : "Ganador:";
         let imgSrc = `images/${player}.png`;
 
         gameOverElement.innerHTML = `
             <h1>${message}</1>
             <img class="winner-img" src=${imgSrc} </img>
-            <div class="play" onclick="location.reload()">Play Again!</div>
+            <div class="play d-grid justify-content-center" onclick="location.reload()">Jugar de nuevo</div>
         `;
 
         gameOverElement.classList.remove("hide");
