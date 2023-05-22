@@ -74,6 +74,12 @@ playBtn.addEventListener("click", function(){
 function switchActive(off, on){
     off.classList.remove("active");
     on.classList.add("active");
+
+    off.style.backgroundColor = "";
+    off.style.color = "";
+    on.style.backgroundColor = "#A6ACFC";
+    on.style.color = "#FFFFFF";
+
 }
 t1.addEventListener("click", function(){
     fondo.style.backgroundImage = "url('../Tableros/imagenes/t1.png')";
