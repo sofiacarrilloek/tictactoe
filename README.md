@@ -21,7 +21,7 @@ Este proyecto fue realizado durante el Octavo semestre de la carrera de Ingeniri
 * Menú:Se encuentra el apartado de jugar con la IA o con algún amigo, elegir el simbolo entre el leoncillo o el logo del tec y el tipo de tablero a utilizar.
 * Tablero: Aquí es donde el juego empieza.
 ## 3. Link a demo
-Aqui puedes visualizar nuestro proyecto terminado: [TicTacToe](https://6499dac73ef5a60088cb5bd4--luxury-pie-0dbc55.netlify.app/)
+Aqui puedes visualizar nuestro proyecto terminado: [TicTacToe](https://luxury-pie-0dbc55.netlify.app/)
 
 ## 4. Integrantes del equipo
 * Sofia Carrillo 
